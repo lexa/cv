@@ -13,7 +13,7 @@
 \newcommand{\ml}[2]{\ifenglish #1 \else #2 \fi}
 
 \directlua {
-  lang = os.getenv('CV_LANGUAGE') or 'english'
+  local lang = os.getenv('CV_LANGUAGE')
   tex.print("\string\\setdefaultlanguage{" .. lang .. "}")
   tex.print("\string\\" .. lang .. "true")
 }
