@@ -1,4 +1,4 @@
 all: cv.pdf
 
 %.pdf: %.tex
-	lualatex --interaction=batchmode $<
+	lualatex --synctex=1 --interaction=batchmode $<
