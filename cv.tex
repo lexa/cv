@@ -10,7 +10,7 @@
 
 \newif\ifenglish
 \newif\ifrussian
-\newcommand{\ml}[2]{\ifenglish #1 \else #2 \fi}
+\newcommand{\ml}[2]{\ifenglish#1\else#2\fi}
 
 \directlua {
   local lang = os.getenv('CV_LANGUAGE')
