@@ -5,6 +5,16 @@
 \phone[mobile]{+7~(915)~984~59~77}
 \social[github]{lexa}
 \social[linkedin]{aleksei-fedotov}
+\usepackage{polyglossia}
+\newif\ifenglish
+\newif\ifrussian
+\newcommand{\ml}[2]{\ifenglish #1 \else #2 \fi}
+
+\directlua {
+  lang = os.getenv('CV_LANGUAGE') or 'english'
+  tex.print("\string\\setdefaultlanguage{" .. lang .. "}")
+  tex.print("\string\\" .. lang .. "true")
+}
 
 \begin{document}
 \makecvtitle
