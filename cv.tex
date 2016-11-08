@@ -1,13 +1,6 @@
 \documentclass[11pt,a4paper]{moderncv}
-\moderncvstyle{casual}
-\moderncvcolor{blue}
-\name{Aleksei}{Fedotov}
-\phone[mobile]{+7~(915)~984~59~77}
-\social[github]{lexa}
-\social[linkedin]{aleksei-fedotov}
 \usepackage{polyglossia}
 \usepackage{graphicx}
-\setmainfont{CMU Bright}
 
 \newif\ifenglish
 \newif\ifrussian
@@ -18,6 +11,16 @@
   tex.print("\string\\setdefaultlanguage{" .. lang .. "}")
   tex.print("\string\\" .. lang .. "true")
 }
+
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+\name{\ml{Aleksei}{Алексей}}{\ml{Fedotov}{Федотов}}
+\title{\ml{Resume}{Резюме}}
+\phone[mobile]{+7~(915)~984~59~77}
+\email{a.fedotov@cfotr.com}
+\social[github]{lexa}
+\social[linkedin]{aleksei-fedotov}
+\setmainfont{CMU Bright}
 
 \begin{document}
 \makecvtitle
