@@ -1,0 +1,19 @@
+language: c
+
+addons:
+  apt:
+    packages:
+      texlive-full
+      make
+
+script: make
+
+deploy:
+  skip_cleanup: true
+  overwrite: true
+  file:
+    - english.pdf
+    - russian.pdf
+  api_key: '$GITHUB_OAUTH_TOKEN'
+  on:
+    tags: true
