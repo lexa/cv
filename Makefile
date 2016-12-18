@@ -1,6 +1,6 @@
 all: english.pdf russian.pdf
 
-LATEX=lualatex --synctex=1 -jobname=$(@:%.pdf=%) --interaction=batchmode $<
+LATEX=lualatex --synctex=1 -jobname=$(@:%.pdf=%) --interaction=errorstopmode --halt-on-error $<
 
 .DELETE_ON_ERROR:
 
