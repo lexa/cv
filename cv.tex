@@ -25,15 +25,13 @@
 \makecvtitle
 \setlength{\hintscolumnwidth}{0.20\textwidth}
 
-\section{\ml{Education}{Образование}}
-\def \UNIV {\ml{Yaroslavl State University}{ЯРгУ им. П.Г. Демидова}}
+% useful macroses
 \def \YAR {\ml{Yaroslavl, Russia}{г. Ярославль}}
 \def \MSK {\ml{Moscow}{Москва}}
+\def \UNIV {\ml{Yaroslavl State University}{ЯРгУ им. П.Г. Демидова}}
 \def \Samsung {\ml{Samsung R\&D Russia}{Исследовательский центр самсунг}}
 \def \Samsunglogo {\\\includegraphics[width=20pt]{samsung.png}}
-% TODO: add average grade
-\cventry{2006--2010}{\ml{Bachelor}{Бакалавр}}{\UNIV}{\YAR}{}{}
-\cventry{2010--2012}{\ml{Master}{Магистр}}{\UNIV}{\YAR}{}{}
+
 
 \section{\ml{Experience}{Опыт работы}}
 \cventry{2015--\ml{now}{Настоящее время}\Samsunglogo}{\ml{Lead Software Engineer}{Ведущий инженер-разработчик}}{\Samsung}{\MSK}{}{}
@@ -49,5 +47,10 @@
 \cvitem{VCS}{Git, Perforce}
 \cvitem{\ml{OS}{ОС}}{GNU\textbackslash Linux, Android, Tizen}
 \cvitem{\ml{Other}{Прочее}}{GDB, \LaTeX, Valgrind, Emacs}
+\section{\ml{Education}{Образование}}
+% average grade (3*1 + 4*8 + 5*16)/(1+8+16) = 4.6
+\cventry{2006--2010}{\ml{Bachelor}{Бакалавр}}{\UNIV}{\YAR}{\ml{Average grade}{Средний балл} 4.6}{}
+% average grade (3*1 + 4*8 + 5*16 + 5*7)/(1+8+16+7) = 4.687
+\cventry{2010--2012}{\ml{Master}{Магистр}}{\UNIV}{\YAR}{\ml{Average grade}{Средний балл} 4.7}{}
 
 \end{document}
