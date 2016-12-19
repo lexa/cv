@@ -1,5 +1,7 @@
 .DEFAULT_GOAL = all
 
+GIT_TAG=$(shell git describe)
+
 #generate document depending on git tag
 PREFIX=
 ifeq ($(GIT_TAG),)
