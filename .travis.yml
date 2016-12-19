@@ -13,6 +13,7 @@ addons:
 script: make
 
 deploy:
+  provider: releases
   skip_cleanup: true
   overwrite: true
   file:
