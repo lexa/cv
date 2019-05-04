@@ -45,7 +45,7 @@ I'm looking for a position of a Lead Software engineer for Embedded systems, pre
 \begin{itemize}
 \item \ml{Expertise with C language and understanding of ARM assembly language}{Знание языка C и понимание ARM assembly language}
 \item \ml{Development in Linux environment i.e. experience with GCC, Make, Bash, cross compilation}{Опыт в разработке в Linux окружении с использованием GDB, GCC, Make, Bash в том числе и для кросс-компиляции}
-\item \ml{General knowledge about IP networks and transport layer protocols}{Опыт админинистрирования IP сетей, знание сетевых протоколов. } TCP, UDP, ICMP, IPv4, IPv6, DHCP, ARP, VLAN(802.1Q), OSPF, BGP, STP
+\item \ml{Knowledgeable in IP networks and transport layer protocols}{Опыт админинистрирования IP сетей, знание сетевых протоколов. } TCP, UDP, ICMP, IPv4, IPv6, DHCP, ARP, VLAN(802.1Q), OSPF, BGP, STP
 \item \ml{Maintaining and configuring network equipment, IP routers, Ethernet switches, Linux/FreeBSD servers}{Поддержка и настройка сетевого оборудования, IP роутеров, Ethernet коммутаторов, Linux/FreeBSD серверов}
 \item \ml{Driver development for Linux kernel}{Написание модулей ядра Linux}
 \item Debugging of use-space and kernel space, using GDB, JTAG Lauterbach Trace32.
@@ -55,21 +55,31 @@ I'm looking for a position of a Lead Software engineer for Embedded systems, pre
 \end{itemize}
 
 \section{\ml{Technical skills}{Технические навыки}}
-\cvitem{\ml{Languages}{Языки}}{C, Bash, Python(basic), GNU Make, C++(basic knowledge), ARM Assembler Language}
+\cvitem{\ml{Languages}{Языки}}{C, Bash, Python, GNU Make, C++(basic knowledge), ARM Assembler Language}
 \cvitem{VCS}{Git, Perforce}
 \cvitem{\ml{OS}{ОС}}{GNU\textbackslash Linux, Android, Tizen}
 \cvitem{Network}{Ethernet, VLAN(802.1Q), TCP, UDP, ARP, ICMP, STP, IPv4, IPv6, DHCP, OSPF, BGP}
-\cvitem{\ml{Other}{Прочее}}{GDB, \LaTeX, Valgrind, Emacs, Doxygen, Yocto, low-level Android, VirtIO}
+\cvitem{Dev Tools}{Lauterbach Trace32, Valgrind, Pytest, GDB}
+\cvitem{\ml{Other}{Прочее}}{\LaTeX, Emacs, Doxygen, Yocto, low-level Android, VirtIO, Continous Integration (CI), Jira}
 
 \section{\ml{Experience}{Опыт работы}}
 \cventry{2017--\ml{present}{Настощий момент}}{Software Engineer}{\OpSy}{\BER}{} {
-  Development of Virtualization solution for Automotive applications.\newline
+  \href{https://www.opensynergy.com/coqos-hypervisor-sdk/}{COQOS Hypervisor SDK - Integrated virtualization solution for Automotive application}\newline\newline
+  The product enables a mutliple Operating systems (including Linux, Android,
+  AUTOSAR and others) to run on one System-on-Chip (SoC) while protecting them
+  from interfering with each-other. It is augmented by a VirtIO implementation,
+  allowing for OS to share hardware (disk, network, or GPU).
   \begin{itemize}
-  \item Development of Yocto based Linux distribution for Automotive application.
-  \item Porting Linux and Android kernels to a new HW platforms.
-  \item Development of Virtio-based kernel drivers.
+  \item Ported Linux and Android to a new hardware platforms.
+  \item Developed a VirtIO-based kernel device.
+  \item Established Continious Integration cycle.
+  \item Developed a test system for the project, based of pytest3/python.
+  \item Acting as Release Manager.
+  \item Fully automated the deployment process.
+  \item Reduced release cycle time from month to weeks.
   \end{itemize}
-  }
+  (Python, Pytest, Lauterbach Trace32, VirtIO, Linux kernel, ARM)
+}
 
 \cventry{2013--2017}{\ml{Lead Software Engineer}{Ведущий Инженер-разработчик}}{\Samsung}{\MSK}{}{
   \ml{Develop secure embedded operating system for working under ARM TrustZone technology.}{Разработка защищенной POSIX-подобной ОС для работы на процессорах ARM.} \newline
